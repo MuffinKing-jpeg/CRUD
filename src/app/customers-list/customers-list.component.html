@@ -1,0 +1,32 @@
+<h2>Client list</h2>
+
+<table class="table table-striped">
+    <ng-container *ngTemplateOutlet="tableHeadBlock"></ng-container>
+    <tbody>
+    <tr *ngFor="let customer of this.httpService.customers; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <ng-container *ngTemplateOutlet="tableBodyBlock; context: {$implicit: customer}"></ng-container>
+    </tr>
+    </tbody>
+</table>
+
+
+<ng-template #tableHeadBlock>
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Tel</th>
+        <th scope="col">City</th>
+    </tr>
+    </thead>
+</ng-template>
+
+<ng-template #tableBodyBlock let-customer>
+    <td>{{customer.name}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.mobile}}</td>
+    <td>{{customer.location}}</td>
+</ng-template>
+

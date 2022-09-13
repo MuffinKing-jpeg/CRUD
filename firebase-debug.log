@@ -1,0 +1,73 @@
+[debug] [2022-09-13T15:59:53.605Z] ----------------------------------------------------------------------
+[debug] [2022-09-13T15:59:53.607Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --import=./test-data --export-on-exit=./test-data
+[debug] [2022-09-13T15:59:53.608Z] CLI Version:   11.8.0
+[debug] [2022-09-13T15:59:53.608Z] Platform:      win32
+[debug] [2022-09-13T15:59:53.608Z] Node Version:  v16.17.0
+[debug] [2022-09-13T15:59:53.620Z] Time:          Tue Sep 13 2022 18:59:53 GMT+0300 (за східноєвропейським літнім часом)
+[debug] [2022-09-13T15:59:53.621Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-13T15:59:53.625Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-09-13T15:59:53.744Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-13T15:59:53.745Z] > authorizing via signed-in user (andriydobrus@gmail.com)
+[debug] [2022-09-13T15:59:54.103Z] java version "18.0.2.1" 2022-08-18
+
+[debug] [2022-09-13T15:59:54.104Z] Java(TM) SE Runtime Environment (build 18.0.2.1+1-1)
+Java HotSpot(TM) 64-Bit Server VM (build 18.0.2.1+1-1, mixed mode, sharing)
+
+[debug] [2022-09-13T15:59:54.162Z] Parsed Java major version: 18
+[info] i  emulators: Starting emulators: database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database, hosting"}}
+[debug] [2022-09-13T15:59:54.178Z] [hub] writing locator at C:\Users\andri\AppData\Local\Temp\hub-muffin-sandbox.json
+[debug] [2022-09-13T15:59:54.193Z] > refreshing access token with scopes: []
+[debug] [2022-09-13T15:59:54.195Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-13T15:59:54.195Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-13T15:59:54.205Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-09-13T15:59:54.205Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-09-13T15:59:54.509Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-13T15:59:54.509Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-13T15:59:54.522Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/muffin-sandbox [none]
+[debug] [2022-09-13T15:59:54.995Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/muffin-sandbox 200
+[debug] [2022-09-13T15:59:54.995Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/muffin-sandbox {"projectId":"muffin-sandbox","projectNumber":"808947933023","displayName":"muffin-sandbox","name":"projects/muffin-sandbox","resources":{"hostingSite":"muffin-sandbox","realtimeDatabaseInstance":"muffin-sandbox-default-rtdb"},"state":"ACTIVE","etag":"1_e27dbdbb-d1e1-41c0-81d5-fcc4b0afac2f"}
+[debug] [2022-09-13T15:59:54.996Z] database rules config:  [{"instance":"muffin-sandbox-default-rtdb","rules":"C:\\Users\\andri\\WebstormProjects\\CRUD\\database.rules.json"}]
+[debug] [2022-09-13T15:59:55.006Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-09-13T15:59:55.007Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-09-13T15:59:55.007Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-09-13T15:59:55.007Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\andri\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.8.0.jar","--host","localhost","--port",9000],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\andri\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.8.0.jar\",\"--host\",\"localhost\",\"--port\",9000],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[info] i  database: Importing data from C:\Users\andri\WebstormProjects\CRUD\test-data\database_export\fake-server.json {"metadata":{"emulator":{"name":"database"},"message":"Importing data from C:\\Users\\andri\\WebstormProjects\\CRUD\\test-data\\database_export\\fake-server.json"}}
+[debug] [2022-09-13T16:00:03.311Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/muffin-sandbox/sites 
+[debug] [2022-09-13T16:00:04.536Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/muffin-sandbox/sites 200
+[debug] [2022-09-13T16:00:04.536Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/muffin-sandbox/sites {"sites":[{"name":"projects/muffin-sandbox/sites/muffin-sandbox","defaultUrl":"https://muffin-sandbox.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-09-13T16:00:04.537Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/muffin-sandbox/webApps/-/config [none]
+[debug] [2022-09-13T16:00:05.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/muffin-sandbox/webApps/-/config 200
+[debug] [2022-09-13T16:00:05.297Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/muffin-sandbox/webApps/-/config {"projectId":"muffin-sandbox","databaseURL":"https://muffin-sandbox-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"muffin-sandbox.appspot.com","apiKey":"AIzaSyDXb-1imrsgMcIxzlA68xM8FK7LhWCXy7k","authDomain":"muffin-sandbox.firebaseapp.com","messagingSenderId":"808947933023"}
+[info] i  hosting: Serving hosting files from: dist/CRUD {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/CRUD\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-09-13T16:00:05.432Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-09-13T16:00:05.433Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-09-13T16:00:05.434Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\andri\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\andri\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-09-13T16:00:05.725Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[debug] [2022-09-13T16:00:05.985Z] >>> [apiv2][query] PUT http://localhost:9000/.settings/rules.json ns=muffin-sandbox-default-rtdb
+[debug] [2022-09-13T16:00:05.985Z] >>> [apiv2][body] PUT http://localhost:9000/.settings/rules.json "{\n  \"rules\": {\n    \".read\": \"now < 1670000000\",\n    \".write\": \"now < 1670000000\"\n  }\n}"
+[debug] [2022-09-13T16:00:06.133Z] <<< [apiv2][status] PUT http://localhost:9000/.settings/rules.json 200
+[debug] [2022-09-13T16:00:06.133Z] <<< [apiv2][body] PUT http://localhost:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4001                │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┬────────────────────────────────┐
+│ Emulator │ Host:Port      │ View in Emulator UI            │
+├──────────┼────────────────┼────────────────────────────────┤
+│ Database │ localhost:9000 │ http://localhost:4001/database │
+├──────────┼────────────────┼────────────────────────────────┤
+│ Hosting  │ localhost:5000 │ n/a                            │
+└──────────┴────────────────┴────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  dbUrl: 'https://muffin-sandbox-default-rtdb.europe-west1.firebasedatabase.app/',
 };
